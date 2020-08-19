@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+/*ヘッダー
+***********************************************************/
+body{
+	background:#3498DB;
+}
+#header {
+	background-color: #FFF;
+	margin-bottom: 30px;
+}
+#header .siteTitle {
+	float: left;
+}
+#header .siteTitle a {
+	display: block;
+	padding: 15px 15px 0;
+	font-size: 18px;
+	line-height: 20px;
+	color: #3498DB;
+	font-weight: bold;
+	text-decoration: none;
+}
+#header .btn {
+	display: none;
+	cursor: pointer;
+}
+#gNav::after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+#gNav ul {
+	display: block;
+}
+#gNav li {
+	float: left;
+}
+#gNav li a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #3498DB;
+}
+#gNav li a:hover,
+#gNav li a.active {
+	background-color: #16a085;
+}
+
+@media only screen and (max-width: 767px) {
+	#header .container {
+		margin: 0 -15px;
+	}
+	#header .btn {
+		display: block;
+		position: relative;
+		float: right;
+		padding: 9px 10px;
+		margin-top: 8px;
+		margin-right: 10px;
+		margin-bottom: 8px;
+		background-color: transparent;
+		background-image: none;
+		border: 1px solid transparent;
+		border-radius: 4px;
+	}
+	#header .btn .icon-bar {
+		display: block;
+		width: 22px;
+		height: 2px;
+		border-radius: 1px;
+		background-color: #3498DB;
+		margin-top: 4px;
+	}
+	#header .btn .icon-bar:first-child {
+		margin-top: 0;
+	}
+	#gNav {
+		clear: both;
+	}
+	#gNav ul {
+		display: none;
+		background: #FFF;
+	}
+	#gNav ul.open {
+		display: block;
+	}
+	#gNav li {
+		float: none;
+		border-top: 1px solid #3498DB;
+	}
+	#gNav li a {
+		position: relative;
+	}
+	#gNav li a::after {
+		position: absolute;
+		top: 50%;
+		margin-top: -10px;
+		right: 15px;
+		font-family: FontAwesome;
+		content: "\f054";
+	}
+}
+/*ヘッダー（ここまで）
+***********************************************************/
+
+.gimmicCarousel_sample {
+	width: 100%;
+	max-width: 640px;
+	margin: auto;
+	margin-bottom:120px;
+}
+
+.gimmicCarousel_sample ul.slider {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.gimmicCarousel_sample ul.slider li img {
+	max-width: 100%;
+	height: auto;
+}
